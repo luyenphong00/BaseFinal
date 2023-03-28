@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+
+    </style>
+
+    <style name="CustomDialogAnimation">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+<!--        <item name="android:windowAnimationStyle">@style/PopupAnimation</item>-->
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/nav_default_pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/nav_default_pop_exit_anim</item>
+    </style>
+
+    <style name="BottomSheetCustomDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/styleBottomSheet</item>
+
+    </style>
+
+    <style name="styleBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>
